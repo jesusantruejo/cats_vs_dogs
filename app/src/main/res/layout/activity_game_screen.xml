@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:background="@drawable/gradient_animation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameScreen">
+
+
+    <LinearLayout
+        android:layout_width="382dp"
+        android:layout_height="715dp"
+        android:layout_margin="30dp"
+        android:background="#00FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="141dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="134dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textViewPoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    tools:text="10 Puntos" />
+
+                <TextView
+                    android:id="@+id/textViewLives"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    tools:text="3 Vidas" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonCorazones"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#00FFFFFF"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@android:drawable/menuitem_background" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="248dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="114dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fontdiner_swanky"
+                        android:text="COMODINES"
+                        android:textAlignment="center"
+                        android:textColor="#000000" />
+
+                    <ImageButton
+                        android:id="@+id/imageViewComodines"
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:background="#00FFFFFF"
+                        android:scaleType="centerInside"
+                        app:srcCompat="?attr/actionBarItemBackground" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="134dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonClarify"
+                        android:layout_width="107dp"
+                        android:layout_height="63dp"
+                        android:background="#00FFFFFF"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/reveal" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonNewOne"
+                        android:layout_width="107dp"
+                        android:layout_height="65dp"
+                        android:background="#00FFFFFF"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/change" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButtonMinus"
+                    android:layout_width="10dp"
+                    android:layout_height="39dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/minus"
+                    app:srcCompat="@android:drawable/list_selector_background" />
+
+                <EditText
+                    android:id="@+id/resultInput"
+                    android:layout_width="230dp"
+                    android:layout_height="73dp"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonPlus"
+                    android:layout_width="10dp"
+                    android:layout_height="67dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/plus"
+                    app:srcCompat="@android:drawable/list_selector_background" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonTry"
+                android:layout_width="199dp"
+                android:layout_height="wrap_content"
+                android:background="#298800"
+                android:fontFamily="@font/fontdiner_swanky"
+                android:text="¡PROBEMOS!"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="414dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/textViewA"
+                android:layout_width="236dp"
+                android:layout_height="145dp"
+                android:background="#00FFFFFF"
+                android:scaleType="centerInside"
+                app:srcCompat="@android:drawable/menuitem_background" />
+
+            <LinearLayout
+                android:layout_width="362dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewShowA"
+                    android:layout_width="114dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="60sp" />
+
+                <TextView
+                    android:id="@+id/textViewOperator"
+                    android:layout_width="114dp"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textSize="60sp" />
+
+                <TextView
+                    android:id="@+id/textViewShowB"
+                    android:layout_width="114dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="60sp" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/textViewB"
+                android:layout_width="240dp"
+                android:layout_height="156dp"
+                android:background="#00FFFFFF"
+                android:scaleType="centerInside"
+                app:srcCompat="?attr/actionBarItemBackground" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

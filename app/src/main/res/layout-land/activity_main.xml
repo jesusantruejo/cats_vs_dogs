@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout_ini"
+    android:background="@drawable/gradient_animation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="407dp"
+        android:layout_height="374dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="6dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fontdiner_swanky"
+            android:text="DIFICULTAD"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="317dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonLower"
+                android:layout_width="43dp"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                android:background="@drawable/lowerdiff"
+                android:textColor="#61F641"
+                android:textSize="60sp" />
+
+            <ImageButton
+                android:id="@+id/imageButtonDifficulty"
+                android:layout_width="154dp"
+                android:layout_height="182dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:scaleType="centerInside"
+                app:srcCompat="@android:drawable/list_selector_background"
+                tools:srcCompat="@drawable/hard" />
+
+            <Button
+                android:id="@+id/buttonHigher"
+                android:layout_width="49dp"
+                android:layout_height="88dp"
+                android:layout_weight="1"
+                android:background="@drawable/higherdiff"
+                android:textColor="#FF4242"
+                android:textSize="60sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="322dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="28dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="276dp"
+        android:layout_height="395dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="308dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="244dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="83dp"
+            android:layout_marginTop="353dp"
+            android:layout_marginEnd="84dp"
+            android:layout_marginBottom="26dp"
+            android:ems="10"
+            android:fontFamily="@font/fontdiner_swanky"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/buttonPlay"
+            android:layout_width="245dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="83dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="83dp"
+            android:layout_marginBottom="256dp"
+            android:background="#57C630"
+            android:fontFamily="@font/fontdiner_swanky"
+            android:text="¡A JUGAR!"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            tools:text="¡A JUGAR!" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
